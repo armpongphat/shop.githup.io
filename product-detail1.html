@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รายละเอียดสินค้า 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #e6f0ff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header {
+            width: 100%;
+            max-width: 1200px;
+            background-color: #b0c4de;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #a4b6cf;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-item {
+            font-size: 18px;
+            color: #555;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .nav-item:hover, .nav-item.active {
+            border-bottom: 2px solid #333;
+        }
+
+        .profile-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+        }
+
+        /* Styling for product detail page */
+        .product-detail-container {
+            width: 100%;
+            max-width: 1200px;
+            padding: 40px 20px;
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+            background-color: #f0f8ff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+
+        .product-image-container {
+            flex: 1;
+            text-align: center;
+        }
+
+        .product-detail-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+
+        .product-info-container {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .product-name {
+            font-size: 2.5em;
+            color: #333;
+            margin-top: 0;
+        }
+
+        .product-price-detail {
+            font-size: 1.8em;
+            color: #007bff;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .product-description {
+            margin-top: 20px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .add-to-cart-button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .add-to-cart-button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">ZERAXSHOP</div>
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">หน้าหลัก</a>
+            <a href="#" class="nav-item">เติมเงิน</a>
+            <a href="#" class="nav-item">กล่องข้อความ</a>
+        </nav>
+        <div class="profile-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+        </div>
+    </header>
+
+    <main class="product-detail-container">
+        <div class="product-image-container">
+            <img src="85.jpg" alt="รูปสินค้า 1" class="product-detail-image">
+        </div>
+        <div class="product-info-container">
+            <h1 class="product-name">ฟุตบอล</h1>
+            <p class="product-price-detail">ราคา: 500 บาท</p>
+            <div class="product-description">
+                <h2>รายละเอียดสินค้า</h2>
+                <p>
+                    นี่คือคำอธิบายของสินค้าชิ้นที่ 1 ที่คุณสามารถใส่รายละเอียดต่างๆ ได้ตามต้องการ เช่น คุณสมบัติ, ขนาด, สี, หรือข้อมูลอื่นๆ ที่เป็นประโยชน์ต่อลูกค้า
+                </p>
+                <ul>
+                    <li>คุณสมบัติเด่น 1</li>
+                    <li>คุณสมบัติเด่น 2</li>
+                    <li>คุณสมบัติเด่น 3</li>
+                </ul>
+            </div>
+            <button class="add-to-cart-button">เพิ่มลงในตะกร้า</button>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #e6f0ff; /* สีพื้นหลังอ่อนๆ */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+    max-width: 1200px; /* กำหนดความกว้างสูงสุดของ Header */
+    background-color: #b0c4de; /* สี header */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #a4b6cf; /* เส้นใต้ header */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-item {
+    font-size: 18px;
+    color: #555;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.nav-item:hover, .nav-item.active {
+    border-bottom: 2px solid #333;
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ccc; /* พื้นหลังไอคอน */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 คอลัมน์ */
+    gap: 20px;
+    padding: 40px 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.product-item {
+    background-color: #cdd8e6; /* สีพื้นหลังของสินค้าแต่ละชิ้น */
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-5px); /* ยกขึ้นเมื่อชี้ */
+}
+
+.product-image {
+    width: 100%;
+    height: 200px; /* กำหนดขนาดรูปภาพ */
+    background-color: #aeb9c6; /* สีกล่องรูปภาพ */
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.product-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+}
